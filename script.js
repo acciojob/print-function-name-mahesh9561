@@ -1,5 +1,6 @@
-//your JS code here. If required.
-const function functionName(){
-	alert("functionName")
-}
-functionName()
+ function functionName() {
+            alert(arguments.callee.name);
+        }
+
+        // Call the function to display its own name
+        functionName();
